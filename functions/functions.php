@@ -1,5 +1,10 @@
 <?php
-function getTitle($page) {
-    return "My Site - " . $page;
+function getTitle($title = "Default Title"){
+    echo "<title>$title</title>";
+}
+
+function redirect($url){
+    header("Location: $url");
+    exit();
 }
 ?>
